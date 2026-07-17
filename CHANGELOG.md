@@ -4,6 +4,12 @@ All notable changes to the **Provenance** VS Code extension are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 project uses [Semantic Versioning](https://semver.org/).
 
+## [1.0.2] - 2026-07-17
+
+### Changed
+
+- Maintenance and stability improvements.
+
 ## [1.0.1] - 2026-07-17
 
 ### Changed

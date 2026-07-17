@@ -1,0 +1,102 @@
+NetRise Provenance VS Code Extension — Proprietary License
+============================================================
+
+Copyright (c) 2026 NetRise, Inc. All rights reserved.
+
+This software and associated documentation files (the "Software") are the
+proprietary and confidential property of NetRise, Inc. ("NetRise"). The
+Software is licensed, not sold, to you under the terms of this License.
+
+This is a PLACEHOLDER LICENSE — replace with the final EULA approved by
+NetRise legal counsel before public distribution.
+
+────────────────────────────────────────────────────────────────────────
+1. GRANT OF LICENSE
+────────────────────────────────────────────────────────────────────────
+Subject to the terms of this License and to your active subscription to
+the NetRise Provenance service, NetRise grants you a non-exclusive,
+non-transferable, revocable, limited license to install and use the
+Software on machines under your control, solely for the purpose of
+interacting with the NetRise Provenance service.
+
+────────────────────────────────────────────────────────────────────────
+2. RESTRICTIONS
+────────────────────────────────────────────────────────────────────────
+You may NOT, in whole or in part:
+  (a) copy, modify, adapt, translate, or create derivative works of the
+      Software;
+  (b) reverse engineer, decompile, disassemble, or otherwise attempt to
+      derive the source code of the Software, except to the extent that
+      such activity is expressly permitted by applicable law;
+  (c) rent, lease, sublicense, sell, redistribute, or otherwise transfer
+      the Software or any rights granted under this License to any third
+      party;
+  (d) remove, alter, or obscure any proprietary notices (including
+      copyright, trademark, or patent notices) on or in the Software;
+  (e) use the Software in violation of any applicable law or regulation.
+
+────────────────────────────────────────────────────────────────────────
+3. OWNERSHIP
+────────────────────────────────────────────────────────────────────────
+NetRise retains all right, title, and interest in and to the Software,
+including all intellectual property rights therein. No rights are
+granted to you other than those expressly set forth in this License.
+
+────────────────────────────────────────────────────────────────────────
+4. THIRD-PARTY COMPONENTS
+────────────────────────────────────────────────────────────────────────
+The Software includes third-party open-source components, each of which
+is licensed under its own terms. Such components are listed (with their
+respective licenses) in the node_modules directory of the distributed
+package. Your use of those components is governed by their respective
+licenses.
+
+────────────────────────────────────────────────────────────────────────
+5. TERMINATION
+────────────────────────────────────────────────────────────────────────
+This License is effective until terminated. NetRise may terminate this
+License at any time if you breach any of its terms. Upon termination,
+you must cease all use of the Software and destroy all copies in your
+possession or control. Sections 2, 3, 6, 7, and 8 survive termination.
+
+────────────────────────────────────────────────────────────────────────
+6. DISCLAIMER OF WARRANTIES
+────────────────────────────────────────────────────────────────────────
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT,
+AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE.
+NETRISE DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR
+UNINTERRUPTED.
+
+────────────────────────────────────────────────────────────────────────
+7. LIMITATION OF LIABILITY
+────────────────────────────────────────────────────────────────────────
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL
+NETRISE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
+OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR USE,
+ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE OR THE SOFTWARE,
+WHETHER IN CONTRACT, TORT, OR OTHERWISE, EVEN IF NETRISE HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NETRISE'S TOTAL CUMULATIVE
+LIABILITY UNDER THIS LICENSE WILL NOT EXCEED THE FEES YOU PAID, IF ANY,
+FOR THE SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
+
+────────────────────────────────────────────────────────────────────────
+8. GOVERNING LAW
+────────────────────────────────────────────────────────────────────────
+This License is governed by and construed in accordance with the laws of
+[STATE/JURISDICTION TO BE FILLED IN BY LEGAL], without regard to its
+conflict-of-laws principles. Any dispute arising out of or in connection
+with this License will be subject to the exclusive jurisdiction of the
+courts located in [VENUE TO BE FILLED IN BY LEGAL].
+
+────────────────────────────────────────────────────────────────────────
+9. CONTACT
+────────────────────────────────────────────────────────────────────────
+NetRise, Inc.
+[Address to be filled in]
+legal@netrise.io
+
+────────────────────────────────────────────────────────────────────────
+END OF LICENSE
+────────────────────────────────────────────────────────────────────────

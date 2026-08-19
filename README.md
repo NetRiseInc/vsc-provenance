@@ -1,4 +1,4 @@
-# Provenance — VS Code Extension
+# NetRise Provenance — VS Code Extension
 
 Supply-chain security for your dependencies, powered by
 [NetRise Provenance](https://provenance.netrise.io). As you open or edit a
@@ -39,7 +39,7 @@ rejected packages before they ever touch disk.
    [**Releases**](https://github.com/NetRiseInc/vsc-provenance/releases)
    page (latest at the top; file is under **Assets**).
 
-2. **Install it:** `code --install-extension vsc-provenance-extension-<version>.vsix --force`
+2. **Install it:** `code --install-extension provenance-<version>.vsix --force`
    (or Extensions panel → `…` → **Install from VSIX…**), then `Ctrl+Shift+P` →
    **Developer: Reload Window**.
 3. **Pick your environment** (if not prod): `Ctrl+Shift+P` → **Provenance: Switch
@@ -65,12 +65,15 @@ page (under **Assets**), then either:
 
 - **VS Code UI:** Extensions panel (`Ctrl+Shift+X`) → `…` menu → **Install from
   VSIX…** → pick the file.
-- **Terminal:** `code --install-extension vsc-provenance-extension-<version>.vsix --force`
+- **Terminal:** `code --install-extension provenance-<version>.vsix --force`
 
 Then reload: `Ctrl+Shift+P` → **Developer: Reload Window**.
 
-> **Upgrading?** Install the newer `.vsix` with `--force` and reload — your API
-> key and settings are preserved. New releases are published to the Releases page.
+> **Upgrading (same extension id `netrise.provenance`)?** Install the newer
+> `.vsix` with `--force` and reload — your API key and settings are preserved.
+> **Migrating from `netrise.vsc-provenance-extension`?** Uninstall the old
+> extension, install this `.vsix`, and sign in again (secrets are per extension
+> id). New releases are published to the Releases page.
 
 ---
 
@@ -420,7 +423,7 @@ The extension shells out to a local `netrise` binary for the actual evaluation
 its SHA-256**, extracts it, and caches it (namespaced by version) at:
 
 ```
-…/globalStorage/netrise.vsc-provenance-extension/netrise/<version>/netrise[.exe]
+…/globalStorage/netrise.provenance/netrise/<version>/netrise[.exe]
 ```
 
 You do this once; later sessions reuse it. You can also trigger it manually with
@@ -439,13 +442,13 @@ extension pins the version it expects; a new build simply re-downloads (you clic
 
 ```powershell
 # Windows (PowerShell)
-Remove-Item -Recurse -Force "$env:APPDATA\Code\User\globalStorage\netrise.vsc-provenance-extension\netrise"
+Remove-Item -Recurse -Force "$env:APPDATA\Code\User\globalStorage\netrise.provenance\netrise"
 ```
 ```bash
 # macOS
-rm -rf "$HOME/Library/Application Support/Code/User/globalStorage/netrise.vsc-provenance-extension/netrise"
+rm -rf "$HOME/Library/Application Support/Code/User/globalStorage/netrise.provenance/netrise"
 # Linux
-rm -rf "$HOME/.config/Code/User/globalStorage/netrise.vsc-provenance-extension/netrise"
+rm -rf "$HOME/.config/Code/User/globalStorage/netrise.provenance/netrise"
 ```
 
 > Using **VS Code Insiders**? Replace `Code` with `Code - Insiders` in the path.
@@ -460,7 +463,7 @@ absolute path). To run it from a terminal:
    integrated terminals only**. Open a **new** terminal afterward. Applies only
    once the binary is downloaded.
 2. **Call it by full path** (no setting), e.g.
-   `& "$env:APPDATA\Code\User\globalStorage\netrise.vsc-provenance-extension\netrise\<version>\netrise.exe" --help`.
+   `& "$env:APPDATA\Code\User\globalStorage\netrise.provenance\netrise\<version>\netrise.exe" --help`.
 3. **Install the CLI yourself** from the
    [provenance-cli releases](https://github.com/NetRiseInc/provenance-cli/releases),
    put it on your `PATH`, and point `provenance.firewall.binaryPath` at it so the
@@ -471,7 +474,7 @@ absolute path). To run it from a terminal:
 | Thing | Location |
 |---|---|
 | The extension | VS Code's extensions dir (`~/.vscode/extensions/…`). Contains no binaries — only JS + assets. |
-| The managed `netrise` binary | `…/globalStorage/netrise.vsc-provenance-extension/netrise/<version>/` |
+| The managed `netrise` binary | `…/globalStorage/netrise.provenance/netrise/<version>/` |
 | Your API key | VS Code **SecretStorage** (OS keychain-backed; never in settings/logs) |
 | Verdict cache | VS Code workspace state (per-workspace). Cleared with **Provenance: Clear Cache**. |
 | Packages the firewall installs | Your Python environment (the resolved venv / interpreter) — NOT the extension |
@@ -486,10 +489,12 @@ New versions are published to the
 `.vsix` and reinstall with `--force`:
 
 ```bash
-code --install-extension vsc-provenance-extension-<version>.vsix --force
+code --install-extension provenance-<version>.vsix --force
 ```
 
-Then reload: `Ctrl+Shift+P` → **Developer: Reload Window**. Your API key and
-settings are preserved across upgrades. See the
+Then reload: `Ctrl+Shift+P` → **Developer: Reload Window**. Same-id upgrades
+preserve your API key and settings. If you previously installed
+`netrise.vsc-provenance-extension`, uninstall it and sign in again (secrets
+are per extension id). See the
 [CHANGELOG](CHANGELOG.md) for what's new in each release.
 

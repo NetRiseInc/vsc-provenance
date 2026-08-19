@@ -4,6 +4,15 @@ All notable changes to the **Provenance** VS Code extension are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.3] - 2026-08-19
+
+### Changed
+
+- Gallery identity is now **NetRise Provenance** (`netrise.provenance`). The
+  packaged `.vsix` is `provenance-<version>.vsix`. If you previously sideloaded
+  `netrise.vsc-provenance-extension`, uninstall that copy and install the new
+  `.vsix` (sign in again — secrets are per extension id).
+
 ## [1.1.0] - 2026-07-17
 
 ### Added

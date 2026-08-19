@@ -4,6 +4,17 @@ All notable changes to the **Provenance** VS Code extension are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2026-08-19
+
+### Changed
+
+- Gallery identity is now **NetRise Provenance** (`netriseInc.netrise-provenance`).
+  The packaged `.vsix` is `netrise-provenance-<version>.vsix`. Marketplace
+  `name` must be globally unique (`provenance` is taken). Publisher id is
+  `netriseInc` (create that publisher on Marketplace Manage; it is not the
+  existing `netrise` publisher). Sideloads of `netrise.vsc-provenance-extension`
+  or `netrise.provenance` must be uninstalled; sign in again.
+
 ## [1.1.3] - 2026-08-19
 
 ### Changed
